@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsikom Vazha</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .project-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To My Page</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="index.html">Specification</a>
+
+        <div class="dropdown">
+            <a href="materi.html">Materi</a>
+            <div class="dropdown-content">
+                <a href="#materi1" >Materi 1</a>
+                <a href="#materi2">Materi 2</a>
+                <a href="#materi3">Materi 3</a>
+                <a href="#materi4">Materi 4</a>
+                <a href="#materi5">Materi 5</a>
+                <a href="#materi6">Materi 6</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="materi">
+            <h1>Materi Arsitekur Sistem Komputer</h1>
+            <img class="project-image" src="arsitektur-komputer.png" alt="Project Image">
+            <h1>Kontrak Kuliah</h1>
+            <ul>
+                <li>Berpakaian rapi dan tidak memakai sandal.</li><br>
+                <li>Ijin saat terlambat maupun tidak masuk mata kuliah disampaikan sebelum perkuliahan dimulai. bisa lewat WA atau Surat, selain itu dianggap Alpha.</li><br>
+                <li>Dosen terlambat lebih dari 30 menit atau tidak ada konfirmasi, maka Mahasiswa diperbolehkan meninggalkan ruangan.</li><br>
+                <li>Dilarang plagiarisme Tugas, UTS, UAS!.</li><br>
+                <li>Toleransi keterlambatan 15 menit.</li><br>
+                <li>Penilaian ( Keaktifan 10%, Tugas 40%, UTS dan UAS 40% ).</li>
+            </ul><br><br><br>
+
+
+            <section id="materi1">
+                <h1>Materi 1 ( CPU, ALU dan Register )</h1>
+                <img class="project-image" src="cpu.jpg" width="300" alt="Project Image">
+                <h4>Apa itu CPU?</h4>
+                <p>CPU atau Central Prossesing Unit adalah komponen komputer yang bertanggung jawab untuk menjalankan intruksi yang diberikan kepada komputer. CPU merupakan otak komputer yang bertanggung jawab untuk mengolah data dan menjalankan program yang diperintahkan penggunanya.</p>
+                <p>Struktur CPU antara lain :</p>
+                <ul>
+                    <li>Control unit.</li><br>
+                    <li>Arithmetic Logic Unit (ALU).</li><br>
+                    <li>Registers.</li><br>
+                    <li>CPU Interconnection.</li>
+                </ul><br><br>
+
+                <img class="project-image" src="alu.jpg" width="300" alt="Project Image">
+                <p><b>Arithmetic Logic Unit (ALU)</b> adalah komponen inti dalam unit pemrosesan pusat (CPU) pada sebuah komputer. Fungsinya adalah untuk melakukan operasi aritmatika (penjumlahan, pengurangan, perkalian, dan pembagian) serta operasi logika yang diperlukan dalam eksekusi instruksi dalam program. Berikut beberapa peran utama ALU :</p>
+                <ul>
+                    <li>Dapat melakukan operasi aritmatika dasar.</li><br>
+                    <li>Dapat melakukan operasi logika.</li><br>
+                    <li>Dapat membandingkan data dalam CPU.</li><br>
+                    <li>Dapat melakukan operasi bitwise pada data.</li><br>
+                    <li>Bertanggung jawab untuk mendeteksi dan mengatasi situasi overflow.</li><br>
+                </ul><br>
+                <p><b>Komponen ALU terdiri dari :</b></p>
+                <ol type="1">
+                    <li>Register.</li><br>
+                    <li>Multiplexer.</li><br>
+                    <li>Dekoder.</li><br>
+                    <li>Rangkaian Aritmatika.</li><br>
+                    <li>Rangkaian Logika.</li><br>
+                    <li>Comparator.</li><br>
+                    <li>Rangkaian Overflow dan Carry.</li><br>
+                    <li>Bus Data.</li><br>
+                </ol><br><br>
+                <h1>Registers</h1>
+                <p><b>Registers</b> adalah sekumpulan kecil tempat penyimpanan data yang merupakan bagian dari prosesor komputer. Berikut jenis register umum meliputi :</p>
+                <ul>
+                    <li><b>Memory Address Register</b> : Menyimpan alamat memori yang akan diakses.</li><br>
+                    <li><b>Memory Data Register</b> : Menyimpan data yang dibaca dari atau ditulis ke memori.</li><br>
+                    <li><b>Memory Buffer Register</b> : Menyimpan data yang dapat dibaca atau ditulis dalam memori komputer.</li><br>
+                    <li><b>Program Counter</b> : Menyimpan alamat instruksi berikutnya yang akan dieksekusi.</li>
+                    <li><b>Accumulator</b> : Menyimpan logika atau hasil sementara.</li><br>
+                    <li><b>Index Register</b> : Memodifikasi alamat operan selama menjalankan program.</li><br>
+                    <li><b>Instruction Register</b> : Menyimpan instruksi yang sedang dieksekusi atau yang akan didekodekan.</li>
+                </ul><br>
+            </section>
+
+            <section id="materi2">
+                <h1>Materi 2 (GATE)</h1>
+                <img class="project-image" src="gate.jpg" width="500" alt="Project Image">
+                <h4>Sejarah Komputer</h4>
+               <ul type="square">
+                <li><b>Komputer Generasi I </b> ditemukan pada tahun 1940 - 1956 dan Menggunakan Vacuum tube sebagai komponen digital. Bahasa yang digunakan masih bahasa mesin seperti ( 0 dan 1 ) dan membutuhkan ruang yang luas.</li><br>
+                <li><b>Komputer Generasi II </b> ditemukan pada tahun 1956 - 1963 dan Menggunakan Transitor sebagai komponen digital. Bahasa yang digunakan masih bahasa assembly  dan ukuran tidak sebesar generasi I.</li><br>
+                <li><b>Komputer Generasi III </b> ditemukan pada tahun 1964 - 1971 dan Menggunakan IC sebagai komponen digital. Ukuran lebih kecil dari generasi II.</li><br>
+                <li><b>Komputer Generasi IV </b> ditemukan pada tahun 1971 - sekarang dan Menggunakan Mikroprosesor sebagai komponen digital. terdapat layar monitor yang dapat menampilkan GUI.</li><br>
+                <li><b>Komputer Generasi Selanjutnya</b> Berupa cloud computing dan AI.</li>
+               </ul><br><br>
+               <h2>Logic Gate</h2>
+               <p><b>Gerbang logika atau logic gates</b> adalah proses pengolahan input bilangan biner dengan teori matematika boolean. Logic gate ini menggunakan tabel kebenaran. Jika memiliki nilai benar (true) akan ditunjukan dengan angka “1”. Sebaliknya, jika memiliki nilai salah (false) akan ditunjukan dengan angka “0”.</p>
+               <p><b>Fungsi Logic Gate</b> untuk melakukan fungsi logika dasar untuk membentuk sirkuit digital yang terintegrasi. Berikut beberapa macam gerbang logika antara lain :</p>
+               <ol type="1">
+                <li><b>Gerbang AND (AND Gate)</b> : Menghasilkan output 1 jika semua inputnya adalah 1; jika tidak, menghasilkan output 0.</li><br>
+                <li><b>Gerbang OR (OR Gate)</b> : Menghasilkan output 1 jika setidaknya satu inputnya adalah 1; menghasilkan output 0 jika semua inputnya adalah 0.</li><br>
+                <li><b>Gerbang NOT (NOT Gate)</b> : Menghasilkan keluaran yang merupakan kebalikan dari inputnya.</li><br>
+                <li><b>Gerbang XOR (XOR Gate)</b> : Menghasilkan output 1 jika jumlah input yang aktif (1) ganjil.</li><br>
+                <li><b>Gerbang NAND (NAND Gate)</b> : Kebalikan dari gerbang AND; menghasilkan output 0 hanya jika semua inputnya adalah 1.</li><br>
+                <li><b>Gerbang NOR (NOR Gate)</b> : Kebalikan dari gerbang OR; menghasilkan output 1 hanya jika semua inputnya adalah 0.</li><br>
+               </ol>
+            </section><br><br>
+
+            <section id="materi3">
+                <h1>Materi 3 ( Memory )</h1>
+                <img class="project-image" src="memori.jpg" width="500" alt="Project Image">
+                <p><b>Memory</b> adalah perangkat atau sistem yang digunakan untuk menyimpan informasi untuk penggunaan langsung dalam komputer atau perangkat keras komputer dan  perangkat elektronik digital yang terkait.</p>
+                <p><b>Memory hierarchy</b> adalah konsep yang mengacu pada struktur bertingkat dari berbagai tingkatan memori pada sistem komputer. Hierarki ini didesain untuk memenuhi kebutuhan akses data yang cepat, kapasitas penyimpanan yang memadai, dan efisiensi biaya. Hierarki memori memiliki beberapa tingkatan, antara lain:</p><br>
+                <ol>
+                <li><b>Register</b> : Memory tercepat yang terdapat langsung di dalam unit pemrosesan pusat atau CPU.</li><br>
+                <li><b>Cache Memory</b> : Tingkat memory yang terletak di antara register dan RAM yang dibagi menjadi beberapa tingkatan (L1, L2, L3), cache digunakan untuk menyimpan data yang sering diakses oleh CPU dan mengurangi waktu akses ke RAM.</li><br>
+                <li><b>RAM</b> : Memory utama yang menyimpan data dan instruksi yang sedang digunakan secara aktif oleh CPU.</li><br>
+                <li><b>Mass Storage</b> : Tingkat ini mencakup perangkat penyimpanan besar seperti hard drives (HDD) dan solid-state drives (SSD). Walaupun lebih lambat daripada RAM, perangkat ini menyediakan kapasitas penyimpanan yang besar untuk data jangka panjang.</li>
+               </ol>
+            </section><br><br>
+
+            <section id="materi4">
+                <h1>Materi 4 ( Representasi Data Pada Komputer )</h1>
+                <img class="project-image" src="data.png" width="500" alt="Project Image">
+                <p><b>Data</b> adalah fakta-fakta, angka, informasi yang digunakan sebagai dasar untuk pengambilan suatu keputusan, analisis, penelitian. Data dapat berupa berbagai jenis, seperti teks, angka, gambar, audio, atau video, dan dapat mewakili berbagai jenis informasi.</p>
+                <h2>Data pada komputer</h2>
+                <ul type="square">
+                    <li><b>Data Numerik </b> merupakan data yang berupa angka maupun bilangan, bisa dalam bentuk integer, float dan sebagainya.</li><br>
+                    <li><b>Data Non Numerik </b> adalah data yang bukan berupa angka maupun bilangan. Contohnya adalah data Teks, gambar dan sebagainya.</li>
+                   </ul><br><br>
+            </section>
+
+            <section id="materi5">
+                <h1>Materi 5 ( Dasar Bahasa Pemrograman )</h1>
+                <img class="project-image" src="pemrograman-dasar-feature.jpg" width="500" alt="Project Image">
+                <p><b>Bahasa pemrograman</b> adalah sebuah bahasa yang digunakan
+                untuk menulis atau menyusun kode
+                yang dapat diterjemahkan oleh
+                komputer menjadi instruksi-instruksi
+                yang dapat dieksekusi. Bahasa pemrograman ada beberapa
+                jenis antara lain : <b>bahasa tingkat rendah, bahasa tingkat menengah dan bahasa tingkat tinggi.</b></p>
+                <h4>Fungsi  bahasa pemrograman antara lain :</h4>
+                <ul type="disc">
+                    <li>Memudahkan Komunikasi Antara Komputer dan Pengguna.</li>
+                    <li>Membuat Aplikasi yang Kompleks.</li>
+                    <li>Membuat Kode Reusable.</li>
+                    <li>Mempercepat Pengembangan Software.</li>
+                    <li>Membuat Komputer Melakukan Banyak Tugas yang Berbeda.</li>
+                </ul>
+                <p><b>Bahasa Assembly</b> adalah bentuk bahasa pemrograman yang paling rendah dalam hal tingkat abstraksi. Bahasa mesin menggambarkan instruksi dalam kode biner yang secara langsung dapat dieksekusi oleh komputer.</p>
+                <p><b>Bahasa tingkat rendah</b> : Bahasa yang memberikan kontrol lebih langsung atas perangkat keras komputer. Bahasa ini mudah dipahami oleh manusia, contohnya : ( C dan C++ )</p>
+                <p><b>Bahasa tingkat menengah</b> : Bahasa ini menawarkan tingkat abstraksi yang lebih tinggi dibandingkan bahasa tingkat rendah. Bahasa ini digunakan untuk mengembangkan perangkat lunak sistem, contohnya : ( Ada dan Rust )</p>
+                <p><b>Bahasa tingkat tinggi</b> : Bahasa ini sangat jauh dari bahasa mesin.Bahasa ini sangat mudah dipahami oleh manusia dan lebih banyak digunakan untuk aplikasi web, aplikasi mobile, atau aplikasi data science., contohnya : ( Pyhton, Ruby dan JavaScript )</p>
+            </section><br><br>
+
+            <section id="materi6">
+                <h1>Materi 6 ( Compiler, Interpreter, Linker )</h1>
+                <img class="project-image" src="compiler.jpg" width="500" alt="Project Image">
+                <h2>Translator</h2>
+                <p>Translator biasanya merujuk kepada program atau perangkat lunak yang mengubah kode sumber dari satu bahasa pemrograman ke bahasa pemrograman lain. Ini biasanya dilakukan untuk beberapa tujuan seperti portabilitas, optimisasi, atau integrasi.</p>
+                <p>Ada 2 jenis translator utama pada bahasa pemrograman, yaitu Compiler dan Interpreter.</p>
+                <p><b>Compiler</b> adalah jenis translator yang menerjemahkan seluruh kode sumber dalam satu kali proses ke dalam bahasa mesin. Contohnya seperti : ( C, C++ dan Ada )</p>
+                <p>Fase pada compiler ada 2 yaitu <b>Fase Analisis</b> dan <b>Fase Sintesis.</b></p>
+                <p><b>Interpreter</b> adalah jenis translator yang membaca dan mengeksekusi kode baris demi baris saat program berjalan. Ini berarti kode sumber tidak diterjemahkan ke dalam bahasa mesin atau kode antara sebelum dieksekusi. Contohnya seperti : ( JavaScript, Pyhton dan Ruby )</p>
+                <p><b>Linker</b> adalah menggabungkan berbagai library external dengan object file untuk menghasilkan sebuah program. kode program C biasanya butuh file library external. Sebagai contoh, untuk menampilkan teks kelayar dalam bahasa C perintahnya adalah printf(“Hello World”). Untuk bisa memproses perintah printf(), C butuh sebuah file external, yakni stdio.h.</p>
+                <p>Linker-lah yang akan menggabungkan hello_world.obj dengan stdio.h. Hasil akhirnya akan berupa program berextension*.exe. Karena file source code saya buat sebagai hello_world.c, file programnya akan bernama hello_world.exe. Dengan men-double-klik file hello_world.exe, program kita sudah langsung berjalan.</p>
+
+
+
+            </section>
+        </section>
+    </div>
+
+</body>
+</html>
