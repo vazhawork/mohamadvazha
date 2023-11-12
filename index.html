@@ -1,79 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="<style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); </style>"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arsikom Vazha</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="" class="Logo">Vazha</a>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#spek">Specification</a>
-      </nav>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .project-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .th, td {
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .th {
+        background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To My Page</h1>
     </header>
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Welcome To My Page</h1> 
-        <div class="btn-box">
-          <a href="#spek">My device</a>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#spek">Specification</a>
+
+        <div class="dropdown">
+            <a href="materi.html">Materi</a>
+            <div class="dropdown-content">
+                <a href="materi.html#materi1" >Materi 1</a>
+                <a href="materi.html#materi2">Materi 2</a>
+                <a href="materi.html#materi3">Materi 3</a>
+                <a href="materi.html#materi4">Materi 4</a>
+                <a href="materi.html#materi5">Materi 5</a>
+                <a href="materi.html#materi6">Materi 6</a>
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="center"> 
-        <div>
-          <h2>About Me</h2> <br>
-            <p>Moh Vazha Sulthan B</p>
-            <p>Mahasiswa | Programmer | Editor</p>
-            <I>"just a guy lost everything"</I>
-        </div>
-      </div>
-    </section>
-    
-    <section class="spek" id="spek">
-      <div class="center">
-        <h1>Spesifikasi Hp</h1>
-      </div>
-      <table class="center">
-        <tr>
-            <th>Model</th>
-            <td>Oppo A83 CPH1729</td>
-        </tr>
-        <tr>
-            <th>Chipset</th>
-            <td>Mediatek Helio P23 16nm</td>
-        </tr>
-        <tr>
-            <th>CPU</th>
-            <td>Octa-core 2.5 GHz Cortex-A53</td>
-        </tr>
-        <tr>
-            <th>GPU</th>
-            <td>Mali-G71 MP2</td>
-        </tr>
-        <tr>
-            <th>RAM</th>
-            <td>3GB LPDDR3</td>
-        </tr>
-        <tr>
-            <th>ROM</th>
-            <td>32GB</td>
-        </tr>
-        <tr>
-            <th>OS</th>
-            <td>Android 7.1 Nougat</td>
-        </tr>
-       </table>
-      </div>
-    </section>
-  </body>
+    </nav>
+
+    <div class="container">
+
+        <img class="project-image" src="universe.avif" alt="Project Image">
+        <p style="text-align: center;"><I><b>just a guy lost everything.</b></I></p><br><br><br>
+        <br>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Saya Moh Vazha Sulthan B. Kelas Informatika 1A</p>
+            <p><b>Editor | Programmer | Mahasiswa</b></p>
+        </section><br><br>
+
+        <section id="spek">
+            <h2>My Specification</h2>
+            <h3>Oppo A83</h3>
+            <table class="center">
+                <tr>
+                    <th>Model</th>
+                    <td>Oppo A83 CPH1729</td>
+                </tr>
+                <tr>
+                    <th>Chipset</th>
+                    <td>Mediatek Helio P23 16nm</td>
+                </tr>
+                <tr>
+                    <th>CPU</th>
+                    <td>Octa-core 2.5 GHz Cortex-A53</td>
+                </tr>
+                <tr>
+                    <th>GPU</th>
+                    <td>Mali-G71 MP2</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>3GB LPDDR3</td>
+                </tr>
+                <tr>
+                    <th>ROM</th>
+                    <td>32GB</td>
+                </tr>
+                <tr>
+                    <th>OS</th>
+                    <td>Android 7.1 Nougat</td>
+                </tr>
+               </table>
+        </section>  
+    </div>
+
+</body>
 </html>
